@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 5-9</title>
+</head>
+<body>
+<script>
+    let amount_in_KZT = prompt("INSERT YOUR AMOUNT IN KZT:");
+    let currency_number = prompt("1 - CONVERT TO USD \n" + "2 - CONVERT TO EUR \n" + "3 - CONVERT TO GBP");
+    let USD = 380;
+    let EUR = 430;
+    let GBP = 480;
+
+    if (currency_number === 1) {
+        console.log(`${amount_in_KZT} KZT = ${Math.round((amount_in_KZT / USD) * 100) / 100} USD`);
+    }
+    else if (currency_number === 2) {
+        console.log(`${amount_in_KZT} KZT = ${Math.round((amount_in_KZT / EUR) * 100) / 100} EUR`);
+    }
+    else if (currency_number === 3) {
+        console.log(`${amount_in_KZT} KZT = ${Math.round((amount_in_KZT / GBP) * 100) / 100} GBP`);
+    }
+</script>
+</body>
+</html>

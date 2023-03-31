@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+}
+
+.body {
+    background-color: #edeef0;
+}
+
+.header {
+    background-color: white;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    width: 136px;
+    display: flex;
+    align-items: center;
+    margin-left: 12.4%;
+}
+
+.header-logo > h4 {
+    margin-left: 7px;
+    font-style: inherit;
+}
+
+.fa-brands {
+    color: rgb(0, 119, 255);
+    font-size: 27px;
+}
+
+.header-border {
+    display: flex;
+    margin-left: 8.4%;
+    margin-right: 40%;
+}
+
+input.header-search {
+    width: 231px;
+    margin-left: 32px;
+    padding: 0 0 0 34px;
+    border-radius: 8px;
+    border: none;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.92%22%3E%3Cpath%20opacity%3D%22.1%22%20d%3D%22M0%200H16V16H0z%22%2F%3E%3Cpath%20d%3D%22M6.5%201a5.5%205.5%200%200%201%204.383%208.823l3.896%203.9a.75.75%200%200%201-1.061%201.06l-3.895-3.9A5.5%205.5%200%201%201%206.5%201zm0%201.5a4%204%200%201%200%200%208%204%204%200%200%200%200-8z%22%20fill%3D%22%23818c99%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: #edeef0;
+    height: 32px;
+    outline: none;
+}
+
+.header-login {
+    display: flex;
+    align-items: center;
+}
+
+.account-profile {
+    margin: 0;
+    border-radius: 50%;
+    border: 0;
+    height: 32px;
+    width: 32px;
+}
+
+.account-profileArrow {
+    margin: 0 8px 0 6px;
+}
+
+.header-login p {
+    margin-right: 10px;
+}
+
+.contents {
+    display: flex;
+    width: 75.5%;
+    margin: 0 auto;
+}
+
+.main-return {
+    width: 100px;
+    font-size: 14px;
+    color: grey;
+    display: flex;
+}
+
+.side-bar {
+    width: 17.2%;
+}
+
+.side-bar-ul {
+    list-style: none;
+    padding: 0;
+    line-height: 25pt;
+}
+
+.bars {
+    display: flex;
+}
+
+.icons {
+    align-items: center;
+    text-align: center;
+    width: 25px;
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    font-size: 14pt;
+    color: #5182b8;
+}
+
+.letters {
+    width: 120px;
+    height: 30px;
+    font-size: 11pt;
+    margin-right: 15px;
+}
+
+.line-div {
+    border-top: 1px solid #dce1e6;
+    padding-top: 9px;
+    margin: 9px 9px 0 36px;
+}
+
+.line-div-footer {
+    border-top: 1px solid #dce1e6;
+    margin-top: 15px;
+    margin-right: 10px;
+
+}
+
+.footer-row-1 {
+    margin-top: 15px;
+    color: grey;
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.footer-row-2 {
+    color: grey;
+    font-size: 14px;
+}
+
+.page-body {
+    width: 796px;
+    height: 735px;
+    display: flex;
+}
+
+.left-side-body {
+    background: #ffffff;
+    border-radius: 4px;
+    width: 552px;
+    height: 50px;
+}
+
+.left-side-body-header {
+    height: 23px;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    font-size: 12pt;
+    padding-top: 15px;
+}
+
+.left-text {
+    display: flex;
+    width: 117px;
+}
+
+.right-text {
+    display: flex;
+    padding-left: 15px;
+    width: 125px;
+
+}
+
+.left-text-counter {
+    padding-left: 5px;
+    color: grey;
+}
+
+.right-text-counter {
+    padding-left: 5px;
+    color: grey;
+}
+
+.left-side-body-button {
+    margin-left: 15px;
+}
+
+.left-side-body-button-fix {
+    height: 26px;
+    width: 120px;
+    margin-left: 115px;
+    color: white;
+    background-color: #5181b8;
+    border-radius: 4px;
+    border: 0;
+}
+
+.left-side-button-border {
+    border: 1px solid #2a5885;
+    margin-top: 11px;
+    margin-left: 15px;
+    margin-right: 413px;
+}
+
+.left-side-body-search {
+    background: #ffffff;
+    border-radius: 4px;
+    margin-top: 1px;
+    width: 552px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.left-main-content {
+    width: 100%;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.left-side-body-icon {
+    color: #a9a3a3;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.left-side-body-middle-text {
+    width: 77.5%;
+}
+
+.left-side-body-right-text {
+    font-size: 15px;
+    color: #2a5885;
+    margin-bottom: 2px;
+}
+
+.input-fix {
+    outline: none;
+    border: transparent;
+    margin-bottom: 2px;
+}
+
+.list-of-friends {
+    background: #ffffff;
+    border-radius: 4px;
+    width: 552px;
+    height: 625px;
+    display: block;
+}
+
+.friend {
+    margin-left: 20px;
+    margin-top: 2px;
+    width: 95%;
+    padding-top: 12px;
+}
+
+.f-photo-fix {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.f-content {
+    margin-left: 15px;
+    height: 80px;
+    align-items: center;
+    width: 75.5%;
+}
+
+.main-friend {
+    display: flex;
+    align-items: center;
+    line-height: 25px;
+}
+
+.f-icon {
+    margin-bottom: 37px;
+    color: grey;
+}
+
+.f-name {
+    font-size: 16px;
+}
+
+.f-text {
+    font-size: 15px;
+}
+
+.f-ms {
+    font-size: 15px;
+}
+
+.flag-of-spain {
+    height: 15px;
+    width: 20px;
+    margin-left: 3px;
+}
+
+.symbols {
+    margin: 0 5px;
+}
+
+.friends-button-border {
+    border: 1px solid #dce1e6;
+    margin-right: 17px;
+}
+
+.right-side-body {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.r-s-f-block {
+    background: #ffffff;
+    border-radius: 4px;
+    height: 200px;
+    line-height: 30px;
+    list-style-type: none;
+    padding: 6px 0 0;
+}
+
+.r-s-f-block {
+    color: #5181b8;
+    font-size: 15px;
+    width: 100%;
+}
+
+.calendar {
+    margin-left: 50%;
+    color: grey;
+}
+
+.grey-side-color {
+    background-color: rgba(174, 183, 194, 0.16);
+    color: black;
+    padding-left: 20px;
+    border-left: 2px solid #5181b8;
+}
+
+.white-side-color {
+    padding-left: 20px;
+}
+
+.r-s-border {
+    border-top: 1px solid #dce1e6;
+    margin: 6px 15px 6px 0;
+}
+
+.r-s-s-block {
+    background: #ffffff;
+    border-radius: 4px;
+    height: 400px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.r-s-s-header {
+    padding: 10px 15px 5px 20px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.r-s-list-main-friend {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.r-s-list-photo-fix {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 15px;
+    margin-top: 2px;
+}
+
+.r-s-list-content {
+    font-size: 14px;
+}
+
+.r-s-s-show {
+    background: #ffffff;
+    border-radius: 4px;
+    margin-top: 2px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+}

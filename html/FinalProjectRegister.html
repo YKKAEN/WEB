@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <style>
+        .container {
+            border: 1px solid #a7a1a1;
+            border-radius: 10px;
+            width: 35%;
+            margin: 50px auto auto;
+            padding: 50px;
+        }
+
+        .button {
+            margin-top: 25px;
+        }
+
+        .btn-outline-primary {
+            float: right;
+        }
+
+        .form-label {
+            padding-top: 10px;
+        }
+
+        .error {
+            height: 25px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form id="form" action="javascript:void(0);">
+        <div>
+            <label for="name" class="form-label">Your name</label>
+            <input type="text" name="name" class="form-control" id="name">
+            <div id="nameError" class="error"></div>
+        </div>
+        <div>
+            <label for="login" class="form-label">Your login</label>
+            <input type="text" name="login" class="form-control" id="login">
+            <div id="loginError" class="error"></div>
+        </div>
+        <div>
+            <label for="password" class="form-label">Your password</label>
+            <input type="text" name="password" class="form-control" id="password">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="button">
+            <button class="btn btn-primary" onclick="checkUser()">Register</button>
+            <a class="btn btn-outline-primary"
+               href="http://localhost:63342/WEB/HTML/FinalProjectTologinpage.html?_ijt=iffq0uv2163dnkai7bpk7no24f"
+               onclick="">To Login Page</a>
+        </div>
+    </form>
+
+    <script>
+
+        let usersArray = [
+            {name: 'AAA', login: 'aaa', password: 'AAAaaa'},
+            {name: 'BBB', login: 'bbb', password: 'BBBbbb'},
+            {name: 'CCC', login: 'ccc', password: 'CCCccc'}
+        ];
+
+        let nameField = form.elements.name;
+        let loginField = form.elements.login;
+        let passwordField = form.elements.password;
+
+        function checkUser() {
+            if (nameField.value === '') {
+                nameError.innerHTML = 'Please enter your name';
+            }
+            if (loginField.value === '') {
+                loginError.innerHTML = 'Please enter your login';
+            }
+            if (passwordField.value === '') {
+                passwordError.innerHTML = 'Please enter your password';
+            }
+
+            if (nameField.value !== '' && loginField.value !== '' && passwordField.value !== '') {
+                let authenticated = false;
+                for (let u of usersArray) {
+                    if (nameField.value === u.name && loginField.value === u.login && passwordField.value === u.password) {
+                        console.log('Welcome');
+                        authenticated = true;
+                        break;
+                    }
+                }
+                if (!authenticated)
+                    console.log('User with this login already exists...');
+                nameField.value = '';
+                loginField.value = '';
+                passwordField.value = '';
+            }
+        }
+
+        function checkFields() {
+            if (event.target === nameField)
+                nameError.innerHTML = '';
+            if (event.target === loginField)
+                loginError.innerHTML = '';
+            if (event.target === passwordField)
+                passwordError.innerHTML = '';
+        }
+
+        nameField.onfocus = checkFields;
+        loginField.onfocus = checkFields;
+        passwordField.onfocus = checkFields;
+
+    </script>
+</div>
+</body>
+</html>
